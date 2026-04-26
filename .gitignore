@@ -1,0 +1,46 @@
+# Local Terraform state, never commit
+*.tfstate
+*.tfstate.*
+*.tfstate.backup
+
+# Crash logs
+crash.log
+crash.*.log
+
+# Local Terraform plan binaries
+*.tfplan
+*.tfplan.*
+
+# Sensitive var files (must be local-only)
+*.tfvars
+*.tfvars.json
+!example.tfvars
+!*.tfvars.example
+
+# Provider plugins + lock file backups (lock file IS committed; see below)
+.terraform/
+.terraform.lock.hcl.backup
+
+# IDE / editor cruft
+.vscode/
+.idea/
+*.swp
+*.swo
+.DS_Store
+
+# tflint cache
+.tflint.d/
+
+# checkov / tfsec output
+.tfsec/
+checkov-output.*
+
+# Coverage
+coverage/
+*.cover
+
+# Local override files (Terraform convention)
+override.tf
+override.tf.json
+*_override.tf
+*_override.tf.json
