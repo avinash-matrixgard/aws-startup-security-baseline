@@ -1,0 +1,11 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Security vulnerability
+    url: https://github.com/avinash-matrixgard/aws-startup-security-baseline/security/advisories/new
+    about: Report a security vulnerability privately. Please do NOT open a public issue for security disclosures.
+  - name: Discuss before opening an issue
+    url: https://github.com/avinash-matrixgard/aws-startup-security-baseline/discussions
+    about: For open questions or proposals not yet ready as bugs / features.
+  - name: MatrixGard services
+    url: https://matrixgard.com
+    about: Looking for fractional DevSecOps support beyond what this module covers? Visit matrixgard.com.

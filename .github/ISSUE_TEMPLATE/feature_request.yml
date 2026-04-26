@@ -1,0 +1,59 @@
+name: Feature request
+description: Propose a new control, an opinionation change, or a docs improvement
+title: "[feat] "
+labels: ["enhancement", "triage"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for the suggestion. The bar for new controls is intentionally high — see [CONTRIBUTING.md](../../CONTRIBUTING.md). Use this template to propose, then we'll discuss before any code is written.
+
+  - type: textarea
+    id: problem
+    attributes:
+      label: What problem does this solve?
+      description: Describe the failure mode or gap. Real-world example preferred.
+    validations:
+      required: true
+
+  - type: textarea
+    id: proposal
+    attributes:
+      label: Proposed change
+      description: |
+        What would you add / remove / change? If proposing a new control, include:
+          - What it does
+          - Why it matters (cite an AWS doc, NIST control, or public incident)
+          - What breaks if a startup skips it
+          - When an org has outgrown it
+    validations:
+      required: true
+
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: Alternatives considered
+      description: Why not solve this with the existing controls? Why is this the right addition vs a separate downstream module?
+
+  - type: dropdown
+    id: scope
+    attributes:
+      label: Scope
+      options:
+        - "New control"
+        - "Change to existing control"
+        - "Documentation"
+        - "CI / tooling"
+        - "Examples"
+    validations:
+      required: true
+
+  - type: checkboxes
+    id: confirmations
+    attributes:
+      label: Pre-flight checks
+      options:
+        - label: I have searched existing issues and didn't find a duplicate
+          required: true
+        - label: I have read CONTRIBUTING.md and this proposal meets the bar (or I'm explicitly asking whether it does)
+          required: true
